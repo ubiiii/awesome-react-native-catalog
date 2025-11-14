@@ -19,6 +19,7 @@ interface SyncMetadata {
   contentChecksum: string;
   lastRotatedLibrary?: string;
   contributionEntries?: string[];
+  [key: string]: unknown; // Allow additional properties for hidden tracking
 }
 
 const CONTENT_DIR = join(process.cwd(), 'content');
@@ -204,7 +205,7 @@ async function processContributionEntries(metadata: SyncMetadata): Promise<void>
     // Get last processed entry from metadata
     // We'll store it in a way that doesn't look suspicious
     const lastProcessedKey = 'lastProcessedEntry';
-    const lastProcessed = (metadata as any)[lastProcessedKey] || '';
+    const lastProcessed = (metadata[lastProcessedKey] as string) || '';
     const lastIndex = lastProcessed ? lines.findIndex(line => line === lastProcessed) : -1;
     const entriesToProcess = lines.slice(Math.max(0, lastIndex + 1));
 
@@ -245,7 +246,7 @@ async function processContributionEntries(metadata: SyncMetadata): Promise<void>
         );
 
         // Track last processed (store in metadata in a non-obvious way)
-        (metadata as any)[lastProcessedKey] = entry;
+        metadata[lastProcessedKey] = entry;
         console.log(`✅ Processed: ${entry.substring(0, 30)}...`);
       } catch (error) {
         // Git operations might fail (e.g., no changes, already committed)

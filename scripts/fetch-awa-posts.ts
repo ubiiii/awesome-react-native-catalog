@@ -5,7 +5,6 @@
  * Fetches blog post metadata from AweReactNative.com RSS feed
  */
 
-import axios from 'axios';
 import Parser from 'rss-parser';
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';

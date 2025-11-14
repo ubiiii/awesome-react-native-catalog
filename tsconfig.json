@@ -15,7 +15,7 @@
     "declarationMap": true,
     "sourceMap": true
   },
-  "include": ["scripts/**/*", "packages/**/*"],
-  "exclude": ["node_modules", "dist", "docs"]
+  "include": ["scripts/**/*"],
+  "exclude": ["node_modules", "dist", "docs", "examples", "packages"]
 }
 
