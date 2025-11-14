@@ -1,0 +1,12 @@
+{
+  "name": "react-native-webview",
+  "description": "React Native WebView component for iOS, Android, macOS, and Windows",
+  "category": "Web",
+  "npmPackage": "react-native-webview",
+  "githubUrl": "https://github.com/react-native-webview/react-native-webview",
+  "documentation": "https://github.com/react-native-webview/react-native-webview#readme",
+  "version": "^13.6.0",
+  "tags": ["webview", "web", "browser", "html"],
+  "difficulty": "beginner"
+}
+

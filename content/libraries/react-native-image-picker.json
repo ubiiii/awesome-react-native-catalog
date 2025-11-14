@@ -1,0 +1,12 @@
+{
+  "name": "react-native-image-picker",
+  "description": "A React Native module that allows you to select images/videos from the device library or camera",
+  "category": "Media",
+  "npmPackage": "react-native-image-picker",
+  "githubUrl": "https://github.com/react-native-image-picker/react-native-image-picker",
+  "documentation": "https://github.com/react-native-image-picker/react-native-image-picker#readme",
+  "version": "^7.0.0",
+  "tags": ["images", "camera", "picker", "media"],
+  "difficulty": "beginner"
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "react-native-async-storage",
+  "description": "Asynchronous, persistent, key-value storage system for React Native",
+  "category": "Storage",
+  "npmPackage": "@react-native-async-storage/async-storage",
+  "githubUrl": "https://github.com/react-native-async-storage/async-storage",
+  "documentation": "https://react-native-async-storage.github.io/async-storage/",
+  "version": "^1.19.0",
+  "tags": ["storage", "persistence", "key-value", "async"],
+  "difficulty": "beginner"
+}
+

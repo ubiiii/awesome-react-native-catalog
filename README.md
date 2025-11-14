@@ -47,6 +47,15 @@ awesome-react-native-catalog/
 - **Live Examples**: Working React Native code examples
 - **Component Library**: Reusable components for your projects
 
+## 📱 Examples
+
+Check out our example apps in the `examples/` directory:
+
+- **Simple Counter**: A basic counter app demonstrating React Native fundamentals
+  ![Simple Counter Example](examples/simple-counter/screenshot.png)
+- **Animated Header**: Scroll-based header animation using Reanimated
+- **Gesture Carousel**: Swipeable carousel with gesture handling
+
 ## 📖 Content
 
 This catalog includes information about 140+ React Native libraries, covering:

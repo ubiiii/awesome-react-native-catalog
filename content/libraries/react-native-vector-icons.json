@@ -1,0 +1,12 @@
+{
+  "name": "react-native-vector-icons",
+  "description": "Customizable Icons for React Native with support for FontAwesome, MaterialIcons, Ionicons and more",
+  "category": "UI",
+  "npmPackage": "react-native-vector-icons",
+  "githubUrl": "https://github.com/oblador/react-native-vector-icons",
+  "documentation": "https://github.com/oblador/react-native-vector-icons#readme",
+  "version": "^10.0.0",
+  "tags": ["icons", "ui", "fontawesome", "material"],
+  "difficulty": "beginner"
+}
+

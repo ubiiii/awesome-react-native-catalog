@@ -1,0 +1,12 @@
+{
+  "name": "react-native-paper",
+  "description": "Material Design for React Native",
+  "category": "UI",
+  "npmPackage": "react-native-paper",
+  "githubUrl": "https://github.com/callstack/react-native-paper",
+  "documentation": "https://callstack.github.io/react-native-paper/",
+  "version": "^5.11.0",
+  "tags": ["ui", "material-design", "components", "theming"],
+  "difficulty": "beginner"
+}
+

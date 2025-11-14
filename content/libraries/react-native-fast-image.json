@@ -1,0 +1,12 @@
+{
+  "name": "react-native-fast-image",
+  "description": "FastImage, performant React Native image component with caching",
+  "category": "Media",
+  "npmPackage": "react-native-fast-image",
+  "githubUrl": "https://github.com/DylanVann/react-native-fast-image",
+  "documentation": "https://github.com/DylanVann/react-native-fast-image#readme",
+  "version": "^8.6.0",
+  "tags": ["images", "caching", "performance", "optimization"],
+  "difficulty": "intermediate"
+}
+

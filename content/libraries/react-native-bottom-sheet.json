@@ -1,0 +1,12 @@
+{
+  "name": "react-native-bottom-sheet",
+  "description": "A performant interactive bottom sheet made with react-native-reanimated and react-native-gesture-handler",
+  "category": "UI",
+  "npmPackage": "@gorhom/bottom-sheet",
+  "githubUrl": "https://github.com/gorhom/react-native-bottom-sheet",
+  "documentation": "https://gorhom.github.io/react-native-bottom-sheet/",
+  "version": "^4.6.0",
+  "tags": ["bottom-sheet", "modal", "ui", "gestures"],
+  "difficulty": "intermediate"
+}
+

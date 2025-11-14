@@ -1,0 +1,12 @@
+{
+  "name": "react-native-svg",
+  "description": "SVG library for React Native, React Native Web, and plain React web projects",
+  "category": "Graphics",
+  "npmPackage": "react-native-svg",
+  "githubUrl": "https://github.com/software-mansion/react-native-svg",
+  "documentation": "https://github.com/software-mansion/react-native-svg#readme",
+  "version": "^13.14.0",
+  "tags": ["svg", "graphics", "vector", "drawing"],
+  "difficulty": "intermediate"
+}
+

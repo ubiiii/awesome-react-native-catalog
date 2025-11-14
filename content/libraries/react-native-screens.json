@@ -1,0 +1,12 @@
+{
+  "name": "react-native-screens",
+  "description": "Native navigation primitives for React Native",
+  "category": "Navigation",
+  "npmPackage": "react-native-screens",
+  "githubUrl": "https://github.com/software-mansion/react-native-screens",
+  "documentation": "https://reactnavigation.org/docs/getting-started#installing-dependencies",
+  "version": "^3.27.0",
+  "tags": ["navigation", "native", "performance", "screens"],
+  "difficulty": "intermediate"
+}
+

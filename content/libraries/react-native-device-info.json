@@ -1,0 +1,12 @@
+{
+  "name": "react-native-device-info",
+  "description": "Device Information for React Native iOS and Android",
+  "category": "Utilities",
+  "npmPackage": "react-native-device-info",
+  "githubUrl": "https://github.com/react-native-device-info/react-native-device-info",
+  "documentation": "https://github.com/react-native-device-info/react-native-device-info#readme",
+  "version": "^10.11.0",
+  "tags": ["device", "info", "utilities", "platform"],
+  "difficulty": "beginner"
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "react-query",
+  "description": "Powerful data synchronization for React",
+  "category": "Data Fetching",
+  "npmPackage": "@tanstack/react-query",
+  "githubUrl": "https://github.com/TanStack/query",
+  "documentation": "https://tanstack.com/query/latest",
+  "version": "^5.17.0",
+  "tags": ["data-fetching", "caching", "synchronization", "state"],
+  "difficulty": "intermediate"
+}
+

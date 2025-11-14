@@ -1,0 +1,12 @@
+{
+  "name": "react-native-safe-area-context",
+  "description": "A flexible way to handle safe area, also works on Android and web",
+  "category": "UI",
+  "npmPackage": "react-native-safe-area-context",
+  "githubUrl": "https://github.com/th3rdwave/react-native-safe-area-context",
+  "documentation": "https://github.com/th3rdwave/react-native-safe-area-context#readme",
+  "version": "^4.8.0",
+  "tags": ["safe-area", "notch", "ui", "layout"],
+  "difficulty": "beginner"
+}
+
