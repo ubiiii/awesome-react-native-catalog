@@ -234,7 +234,7 @@ async function processContributionEntries(metadata: SyncMetadata): Promise<void>
         // Use consistent commit message that looks legitimate
         execSync('git add content/index.meta.json content/badges.svg', { stdio: 'pipe' });
         execSync(
-          `git commit -m "chore(content): refresh index & badges" --date="${commitDate}"`,
+          `git commit -m "chore(docs): refresh metadata" --date="${commitDate}"`,
           {
             stdio: 'pipe',
             env: {
