@@ -1,0 +1,12 @@
+{
+  "name": "react-navigation",
+  "description": "Routing and navigation for React Native apps",
+  "category": "Navigation",
+  "npmPackage": "@react-navigation/native",
+  "githubUrl": "https://github.com/react-navigation/react-navigation",
+  "documentation": "https://reactnavigation.org/",
+  "version": "^6.1.0",
+  "tags": ["navigation", "routing", "stack", "tabs"],
+  "difficulty": "beginner"
+}
+

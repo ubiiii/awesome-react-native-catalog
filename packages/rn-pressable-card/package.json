@@ -1,0 +1,23 @@
+{
+  "name": "@awesome-rn-catalog/rn-pressable-card",
+  "version": "1.0.0",
+  "description": "Animated pressable card component for React Native",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-reanimated": ">=3.0.0"
+  },
+  "keywords": [
+    "react-native",
+    "card",
+    "pressable",
+    "animated"
+  ],
+  "license": "MIT"
+}
+

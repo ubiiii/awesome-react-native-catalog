@@ -1,0 +1,69 @@
+name: Content Sync
+
+on:
+  schedule:
+    # Run 2-3 times per day at non-round minutes (looks more natural)
+    - cron: '17 9 * * *'   # 09:17 UTC
+    - cron: '43 14 * * *'  # 14:43 UTC
+    - cron: '29 19 * * *'  # 19:29 UTC
+  workflow_dispatch: # Allow manual triggers
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Configure git
+        run: |
+          git config --local user.email "content-bot@users.noreply.github.com"
+          git config --local user.name "content-bot"
+
+      - name: Run content sync
+        run: pnpm run sync
+        continue-on-error: true
+        env:
+          AWA_RSS_URL: ${{ secrets.AWA_RSS_URL || 'https://awereactnative.com/author/utkarsh-lubal/feed/' }}
+
+      - name: Check for uncommitted changes
+        id: changes
+        run: |
+          if git diff --quiet HEAD content/index.meta.json content/badges.svg content/libraries/ 2>/dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit any remaining changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git add content/index.meta.json content/badges.svg
+          git add content/libraries/*.json 2>/dev/null || true
+          git commit -m "chore(content): refresh index & badges" || exit 0
+          git push
+
+      - name: Push any commits created by sync script
+        run: |
+          # Push any commits that were created during sync (with proper timestamps)
+          git push || exit 0

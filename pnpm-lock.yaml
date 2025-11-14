@@ -1,0 +1,8 @@
+# This file will be generated when you run 'pnpm install'
+# For now, this is a placeholder
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+

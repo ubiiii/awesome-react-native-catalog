@@ -1,0 +1,21 @@
+/**
+ * Custom CSS for Docusaurus site
+ */
+
+:root {
+  --ifm-color-primary: #6200ee;
+  --ifm-color-primary-dark: #5600d4;
+  --ifm-color-primary-darker: #5100c7;
+  --ifm-color-primary-darkest: #4200a4;
+  --ifm-color-primary-light: #6e1af0;
+  --ifm-color-primary-lighter: #7326f1;
+  --ifm-color-primary-lightest: #8c4df4;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+

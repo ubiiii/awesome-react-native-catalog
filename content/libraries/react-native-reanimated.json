@@ -1,0 +1,12 @@
+{
+  "name": "react-native-reanimated",
+  "description": "React Native's Animated library reimplemented with 60 FPS animations",
+  "category": "Animation",
+  "npmPackage": "react-native-reanimated",
+  "githubUrl": "https://github.com/software-mansion/react-native-reanimated",
+  "documentation": "https://docs.swmansion.com/react-native-reanimated/",
+  "version": "^3.6.0",
+  "tags": ["animation", "performance", "60fps"],
+  "difficulty": "intermediate"
+}
+
